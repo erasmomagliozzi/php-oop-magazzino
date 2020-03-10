@@ -14,3 +14,14 @@ $newProdotto->scadenza = '05/20';
 // echo $newProdotto->pesoNetto();
 
 var_dump($newProdotto);
+
+$newProdotto = new Prodotto('Arancia');
+// $banana = new Alimentari('Banana');
+$newProdotto->prezzo = '0.99 kg';
+$newProdotto->categoria = 'Alimentari';
+$newProdotto->pesoLordo = 0.9;
+$newProdotto->pesoTara = 0.1;
+$newProdotto->scadenza = '04/20';
+// echo $newProdotto->pesoNetto();
+
+var_dump($newProdotto);
