@@ -17,12 +17,12 @@ class Alimentari extends Prodotto
   public $scadenza;
   public function pesoNetto()
   {
-    return $this->pesoLordo - $pesoTara;
+    return $this->pesoLordo - $this->$pesoTara;
   }
 
 }
 
- $banana = new Alimentari('Banana')
+ $banana = new Alimentari('Banana');
  $descrizione = 'Banane dal Congo';
  $prezzo = '1.99 kg';
  $categoria = 'Alimentari';
