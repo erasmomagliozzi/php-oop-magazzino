@@ -11,6 +11,6 @@ $newProdotto->categoria = 'Alimentari';
 $newProdotto->pesoLordo = 0.6;
 $newProdotto->pesoTara = 0.1;
 $newProdotto->scadenza = '05/20';
-echo $newProdotto->pesoNetto();
+// echo $newProdotto->pesoNetto();
 
 var_dump($newProdotto);

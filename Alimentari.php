@@ -6,11 +6,10 @@ class Alimentari extends Prodotto
   public $pesoLordo;
   public $pesoTara;
   public $scadenza;
-  public function pesoNetto()
-  {
-    return $this->pesoLordo - $this->$pesoTara;
-  }
+  public $pesoNetto;
+  // public function pesoNetto()
+  // {
+  //   return $this->$pesoLordo - $this->$pesoTara;
+  // }
 
 }
-
- 
