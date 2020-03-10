@@ -10,6 +10,10 @@ class Prodotto
   {
     $this->titolo = $_titolo;
   }
+  public function pesoNetto()
+  {
+    return $this->pesoLordo - $this->pesoTara;
+  }
 
 }
 
