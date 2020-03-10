@@ -6,13 +6,19 @@ class Prodotto
   public $titolo;
   public $descrizione;
   public $categoria;
-  function __construct($_titolo)
+  function __construct($_categoria)
   {
-    $this->titolo = $_titolo;
+    $this->categoria = $_categoria;
   }
   public function pesoNetto()
   {
     return $this->pesoLordo - $this->pesoTara;
+  }
+  public function title() {
+    if(empty($this->titolo)) {
+      die('Non hai messo il titolo');
+    }
+    return $this->titolo;
   }
 
 }
