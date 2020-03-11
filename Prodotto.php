@@ -6,6 +6,9 @@ class Prodotto
   public $titolo;
   public $descrizione;
   public $categoria;
+  public $pesoLordo;
+  public $pesoNetto;
+  public $pesoTara;
   function __construct($_categoria)
   {
     $this->categoria = $_categoria;
@@ -25,3 +28,4 @@ class Prodotto
 
 
 // cat php_error.log
+// get-content .\php_error.log -tail 1 -wait
